@@ -7,7 +7,7 @@ Grunt and Grunt plugins are installed and managed via `npm`, the Node.js package
 
 
 ##Goal
-You goal is install and load npm task to:
+Your goal is to install and load grunt tasks that will:
 
  * detect errors and potential problems in your JavaScript code located in app folder (`grunt-contrib-jshint`),
 
@@ -15,13 +15,19 @@ You goal is install and load npm task to:
 
  * find your components, install via bower and injects them directly into the `index.html` file (`grunt-wiredep`)
  
-From bootstrap component, should be injected only part of the CSS. Remember that, you can't manually modify `index.html` file.
+For bootstrap component, only the CSS should be injected. Remember that, you can't manually modify `index.html` file.
 
-You start with ready tasks: 
+You start with following tasks preconfigured:
 
-`grunt serve` (you can use it to start browser in live reload mode) and `grunt test` (to start protractor test)
+    grunt serve
 
-###Results
+ you can use it to start browser in live reload mode
+
+    grunt test
+
+to start protractor test
+
+###Expected results
 * **grunt jshint** command result
 
 ```
@@ -60,7 +66,7 @@ Running "wiredep:task" (wiredep) task
 Done, without errors.
 ```
 
-* **.js** file added
+* grunt wiredep should result in following **.js** files being added to index.html
 
 ```
 ...
@@ -72,7 +78,7 @@ Done, without errors.
 </html>
 ```
 
-* **.css** file add
+* grunt wiredep should result in following **.css** files being added to index.html
 ```
 ...
 <title>AngularJS Tutorials</title>

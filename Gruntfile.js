@@ -24,6 +24,12 @@ module.exports = function (grunt)
         }, connect: {
             options: {
                 port: 9000, livereload: 35729, hostname: 'localhost'
+            }, test: {
+                options: {
+                    // set the location of the application files
+                    base: ['app'],
+                    port: 9001
+                }
             }, livereload: {
                 options: {
                     open: true, middleware: function (connect)
@@ -36,34 +42,40 @@ module.exports = function (grunt)
             }
         },
         protractor_webdriver: {
-            start: {
+            driver: {
+                options: {}
+            }
+        }, protractor: {
+            options: {
+                configFile: 'test/protractor.conf.js', keepAlive: false, noColor: false
+            }, chrome: {
                 options: {
-                    path: 'node_modules/protractor/bin/',
-                    command: 'webdriver-manager start'
+                    args: {
+                        browser: 'chrome'
+                    }
+                }
+            }, firefox: {
+                options: {
+                    args: {
+                        browser: 'firefox'
+                    }
+                }
+            }, phantomjs: {
+                options: {
+                    args: {
+                        browser: 'phantomjs'
+                    }
+                }
+            }, continuous: {
+                options: {
+                    keepAlive: true
                 }
             }
-        },
-        protractor: {
-            options: {
-                keepAlive: true,
-                configFile: 'test/protractor.conf.js'
-
-            },
-            run: {}
         }
-
     });
 
-    grunt.registerTask('test', [
-        'protractor_webdriver',
-        'protractor:run'
-    ]);
-
-
-    grunt.registerTask('serve', function ()
-    {
-        grunt.task.run(['connect:livereload', 'watch']);
-    });
+    grunt.registerTask('serve', ['connect:livereload', 'watch']);
+    grunt.registerTask('test', ['connect:test', 'protractor_webdriver', 'protractor:chrome']);
 
     grunt.registerTask('default', ['serve']);
 };
