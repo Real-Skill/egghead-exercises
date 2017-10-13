@@ -1,16 +1,16 @@
-#Exercise 31 : Injectors
+# Exercise 31 : Injectors
 
-##Summary
+## Summary
 You start with ready working application in which the customer selects the required part of his car and decides whether to wait for parts 
 or check their availability. 
 
-##Goals
+## Goals
 To accomplish this exercise replace factory injection with **$injector**.
 
-##Before you start, please refer to:
+## Before you start, please refer to:
   * [angularjs-injectors](https://egghead.io/lessons/angularjs-injectors)
   
-##Setup
+## Setup
  You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
 ```
