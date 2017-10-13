@@ -1,6 +1,6 @@
-#Exercise 12 : Isolate Scope "@", "&"
+# Exercise 12 : Isolate Scope "@", "&"
 
-##Summary
+## Summary
 Application that you are provided with is used for handling simple orders from the customers. It includes a simple list of products available for ordering
 as well as basic functions. 
 
@@ -9,7 +9,7 @@ specify that you should have multiple components for different categories. Being
 and use it multiple times. 
 
 
-##Goals
+## Goals
 Pass custom order function(that accepts product as a parameter) and list of custom products(category).
 Create ***orderComponent*** directive with an isolated scope and use it to allow the user to order from **sweets** and **cakes** categories.
 
@@ -24,14 +24,14 @@ format(directive should have isolate scope)
 check comments to place them correctly)
 * Both **orderComponent** instances in **index.html** should use **buyProduct** function(already included on **appCtrl** scope, expects product as argument)
 
-##Before you start, please refer to:
+## Before you start, please refer to:
 * [angularjs-isolate-scope-expression-binding](https://egghead.io/lessons/angularjs-isolate-scope-expression-binding)
 * [ngularjs-isolate-scope-two-way-binding](https://egghead.io/lessons/angularjs-isolate-scope-two-way-binding)
 * [ngOptions example](https://docs.angularjs.org/api/ng/directive/ngOptions/#example)
 
-##Setup
+## Setup
  
-###To install dependencies
+### To install dependencies
 
 ```
 yarn install
@@ -41,16 +41,16 @@ yarn install
 bower install
 ```
 
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
+### Jshint
 To run verify jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
 To run e2e tests in development mode:
 
