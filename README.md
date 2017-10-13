@@ -1,10 +1,10 @@
-#Exercise 20 : angular.element
+# Exercise 20 : angular.element
 
-##Summary
+## Summary
 You start with a basic application that displays one input field.
 The application should display a circle or square based on the input values.
 
-##Goals
+## Goals
 Complete the `findElement` directive:
 
  * it should be restricted as an element.
@@ -16,13 +16,13 @@ Complete the `findElement` directive:
  
 To add class to the element use **addClass('className')** function, to remove it use **removeClass('className')** and to add the text use **text(''someText')**.
 
-##Before you start, please refer to:
+## Before you start, please refer to:
 * [angularjs-angular-element](https://egghead.io/lessons/angularjs-angular-element)
 * [angularjs-the-basics-of-scope-watch](https://egghead.io/lessons/angularjs-the-basics-of-scope-watch)
 
-##Setup
+## Setup
  
-###To install dependencies
+### To install dependencies
 
 ```
 yarn install
@@ -32,16 +32,16 @@ yarn install
 bower install
 ```
 
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
+### Jshint
 To run verify jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
 To run e2e tests in development mode:
 
