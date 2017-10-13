@@ -1,10 +1,10 @@
-#Exercise 33b: ng-repeat and $index, $event, $log
+# Exercise 33b: ng-repeat and $index, $event, $log
 
-##Summary
+## Summary
 This exercise is about **ng-repeat** directive with `$index`, `$event` and `$log`. Application should display a numbered list of buttons. Third and 
 seventh button should be highlighted and after pressing redirect
 
-##Goals
+## Goals
 * display all elements from the `list` as  numbered from 1 buttons list
 * set `id` button attribute to appropriate `$index` value
 * add appropriate class to buttons 1
@@ -16,10 +16,10 @@ seventh button should be highlighted and after pressing redirect
 
 `< div ng-class="getClass(key)" >`
 
-##Before you start, please refer to:
+## Before you start, please refer to:
 * [angularjs-index-event-log](https://egghead.io/lessons/angularjs-index-event-log)
 
-##Setup
+## Setup
  You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
 ```
