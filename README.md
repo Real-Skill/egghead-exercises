@@ -1,4 +1,4 @@
-#Exercise 14 : Directive to Directive Communication
+# Exercise 14 : Directive to Directive Communication
 
 ## Summary
 In this exercise, your challenge is to share information between directives. 
@@ -9,17 +9,17 @@ You are supposed to create four directives:
 Implement a functionality that will allow you to call alerts. When you click on red circle, double click on yellow circle and when the mouse hovers over the 
 green circle. 
 
-##Goals
+## Goals
 * main directive should have a controller with three function (with names like pattern **addColorName**)
 * the content of the alarms is a simple message ***"ColorName alarm!"***
 * use directive in prepared div elements (check comment)
  
-##Before you start, please refer to:
+## Before you start, please refer to:
  * [angularjs-directive-to-directive-communication](https://egghead.io/lessons/angularjs-directive-to-directive-communication)
 
-##Setup
+## Setup
  
-###To install dependencies 
+### To install dependencies 
 
 ```
 yarn install
@@ -29,16 +29,16 @@ yarn install
 bower install
 ```
 
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
+### Jshint
 To run verify jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
 To unit tests in development mode:
     
