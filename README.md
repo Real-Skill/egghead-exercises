@@ -1,21 +1,21 @@
-#Exercise 22 : templateUrl
+# Exercise 22 : templateUrl
 
-##Summary
+## Summary
 Directive **url** has a big template, try resolve this problem by moving it to another file.
 
-##Goals
+## Goals
  * don't change functionality directive or exist properties in directive
  * create `urlTemplate.html` file for `url` directive template
 
-##Hint
+## Hint
 Watch out for **String** inside the template! 
 
-##Before you start, please refer to:
+## Before you start, please refer to:
 * [angularjs-templateurl](https://egghead.io/lessons/angularjs-templateurl)
 
-##Setup
+## Setup
  
-###To install dependencies
+### To install dependencies
 
 ```
 yarn install
@@ -25,16 +25,16 @@ yarn install
 bower install
 ```
 
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
+### Jshint
 To run verify jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
 To run e2e tests in development mode:
 
