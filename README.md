@@ -1,8 +1,8 @@
-##Exercise 56: ui-router Named Views
+## Exercise 56: ui-router Named Views
 ui-router library is useful for dividing up your application into sections, and changing the content of a section based on the current state.
 Use ui-router which provides the ability to name views within in shoes shop. Application has three tabs: Home, Men, Women. 
 
-###Requirements
+### Requirements
 * complete **app.js** file with stateProvider configuration 
     * create **app** state 
     * add templates from **common** folder to views property
@@ -18,7 +18,7 @@ Use ui-router which provides the ability to name views within in shoes shop. App
     * should have **subcontent** view, which enables to change data in **content**
 * use **app.women.flats** and **app.women.pumps** states to change **subcontent** in **women.content** 
 
-###Result
+### Result
 1) home view with header, mainbar, content, footer
 
 ![alt text](app/assets/1.jpg)
@@ -39,7 +39,7 @@ Use ui-router which provides the ability to name views within in shoes shop. App
 
 ![alt text](app/assets/5.jpg)
 
-###Before you start:
+### Before you start:
 * [angularjs-ui-router-named-views](https://egghead.io/lessons/angularjs-ui-router-named-views)
 * run ```bower install``` command and add **angular-ui-router** to **index.html** and **ui-router** dependency to application
 
