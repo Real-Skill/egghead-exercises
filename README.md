@@ -1,10 +1,10 @@
-#Exercise 7 : Angular built in filters
+# Exercise 7 : Angular built in filters
 
-##Summary
+## Summary
 In this application, you are supposed to use existing AngularJS filters. You start with a provided list of users that is supposed to be sortable and you 
 could limit the number of results. 
 
-##Goals
+## Goals
 Limit the number of displayed records with the radio button (default limit should be 15). Afterwards please update the ability to sort data by column names 
 by creating `reverseSort` function that sort the data ascending and descending. The table should be sort default by **id** (column name keep in `$scope
 .choice`).
@@ -33,14 +33,14 @@ Examples of results:
 | 14 | aboydd     | Angela Boyd      | Female |
 | 15 | farmstronge|Frances Armstrong | Female |
 
-##Before you start, please refer to:
+## Before you start, please refer to:
 * [angularjs-built-in-filters](https://egghead.io/lessons/angularjs-built-in-filters)
 * [orderBy](https://docs.angularjs.org/api/ng/filter/orderBy)
 
-##Setup
+## Setup
  You should have `yarn`, `bower`, `grunt-cli`  packages installed to run this example.
  
-###To install dependencies 
+### To install dependencies 
 
 ```
 yarn install
@@ -50,16 +50,16 @@ yarn install
 bower install
 ```
 
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
+### Jshint
 To run verify jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
 To unit tests in development mode:
     
