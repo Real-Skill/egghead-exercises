@@ -1,16 +1,16 @@
-#Exercise 34b: "Controller as" Syntax
+# Exercise 34b: "Controller as" Syntax
 
-##Summary
+## Summary
 Setting data on scope is dangerous because it makes available everywhere, wherefore used setting data on controller and simplifies access to the this data new structure.
 
-##Goals
+## Goals
 * replace all use **$scope** inside **AppCtrl**, **UnSuccessCtrl**, **SetCtrl** controllers
 * the application should work the same as before the change
 
-##Before you start, please refer to:
+## Before you start, please refer to:
 * [angularjs-experimental-controller-as-syntax](https://egghead.io/lessons/angularjs-experimental-controller-as-syntax)
 
-##Setup
+## Setup
  You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
 ```
