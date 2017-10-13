@@ -1,9 +1,9 @@
-#Exercise 8 : Angular first directive
+# Exercise 8 : Angular first directive
 
-##Summary
+## Summary
 The world needs more heroes. You are given a hard task to create at least two heroes and one superhero. Implement three simple directives that will allow you to create as many heroes as you need.
 
-##Goals
+## Goals
 
 * `hero` directive restricted as element and with given template as follows: 
 
@@ -27,13 +27,13 @@ The **superhero** should look as follows:
 
 ![alt text](app/assets/example.png "Superhero")
 
-##Before you start, please refer to:
+## Before you start, please refer to:
 * [angularjs-first-directive](https://egghead.io/lessons/angularjs-first-directive)
 * [write-your-first-directive](https://egghead.io/lessons/write-your-first-directive)
 
-##Setup
+## Setup
  
-###To install dependencies 
+### To install dependencies 
 
 ```
 yarn install
@@ -43,16 +43,16 @@ yarn install
 bower install
 ```
 
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
+### Jshint
 To run verify jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
 To unit tests in development mode:
     
