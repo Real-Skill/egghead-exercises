@@ -1,12 +1,12 @@
-#Exercise 10 : Directive restrictions
+# Exercise 10 : Directive restrictions
 
-##Sumamry
+## Sumamry
 Developers were discussing how to extend the application functionality. They decided that not only they will need some new elements on the page, but they also 
 need to change the behavior of existing elements to meet current requirements. You are given a task to implement four directives that will serve as templates
 for their use. Each of the directives should be restricted to a different property: element, attribute, class and finally comment. Furthermore, you should
 provide a working example.
 
-##Goals
+## Goals
 
 * `restrictE` directive restricted to the element and with the template set to the example data as follows: **'{{description.element.name}}: {{description
 .element.call}}'** 
@@ -23,13 +23,13 @@ property)
  `camelCase` directives should be use inside .html files in this way: `camel-case`  
 
 
-##Before you start, please refer to:
+## Before you start, please refer to:
 * [angularjs-directive-restrictions](https://egghead.io/lessons/angularjs-directive-restrictions)
 * [restrictions](https://docs.angularjs.org/guide/directive)
 
-##Setup
+## Setup
  
-###To install dependencies 
+### To install dependencies 
 
 ```
 yarn install
@@ -39,16 +39,16 @@ yarn install
 bower install
 ```
 
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
+### Jshint
 To run verify jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
 To unit tests in development mode:
     
