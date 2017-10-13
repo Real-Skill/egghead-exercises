@@ -1,18 +1,18 @@
-#Exercise 21 : scope vs $scope
+# Exercise 21 : scope vs $scope
 
-##Summary
+## Summary
 In this application there are two directives working on the same scope. The final working application should display two inputs with different values. You can achieve this by editing `scope.js`.
 
-##Goals
+## Goals
  * don't make any change in the **templates** of directives and  **index.html** view.
  * you should be able to insert two different values for the inputs and display it by clicking the corresponding button.
 
-###Before you start, please refer to:
+### Before you start, please refer to:
 * [angularjs-scope-vs-scope](https://egghead.io/lessons/angularjs-scope-vs-scope)
 
-##Setup
+## Setup
  
-###To install dependencies
+### To install dependencies
 
 ```
 yarn install
@@ -22,16 +22,16 @@ yarn install
 bower install
 ```
 
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
+### Jshint
 To run verify jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
 To run e2e tests in development mode:
 
