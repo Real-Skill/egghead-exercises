@@ -1,9 +1,9 @@
-#Exercise 27 : resolve $routeChangeError
+# Exercise 27 : resolve $routeChangeError
 
-##Summary
+## Summary
 Application has no validation of route params. You have to handle route change error event to improve user experience. Final application should display a message that depends on the validation result.
 
-##Goals
+## Goals
 * define function that will return rejected promise
 * extend `/order` route configuration by adding resolve object with function from previous point
 * handle error by setting listener to `$routeChangeError` event
@@ -12,11 +12,11 @@ Application has no validation of route params. You have to handle route change e
 	* if quantity or price field is empty - display message : "You gave wrong data" inside red alert (`alert alert-danger` bootstrap class) and set cost of product to 0
 	* if quantity and price are fill display message : "You gave correct data" inside green alert (`alert alert-success` bootstrap class) and calculate cost of products (price * quantity)                     
  
-##Before you start, please refer to:
+## Before you start, please refer to:
 * [angularjs-resolve-conventions](https://egghead.io/lessons/angularjs-resolve-conventions)
 * [angularjs-resolve-routechangeerror](https://egghead.io/lessons/angularjs-resolve-routechangeerror)
 
-##Setup
+## Setup
  You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
 ```
