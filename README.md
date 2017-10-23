@@ -1,9 +1,9 @@
-#Exercise 6: Angular ng-repeat and filtering data
+# Exercise 6: Angular ng-repeat and filtering data
 
-##Summary
+## Summary
 In this application, you are supposed to create `searchStudent` filter allowing user to search through the list of students by filtering the specified field.
 
-##Goals
+## Goals
 Your task is to make the `search` input field search through all categories. Each input field is responsible for its own column. Furthermore, you should be able
  to filter by using multiple fields at the same time.
 
@@ -20,39 +20,35 @@ Your task is to make the `search` input field search through all categories. Eac
 | Warner  |Bridges| 18|warner.bridges@undefined.biz|+1 (914) 451-3055|
 | Gray  |Rose| 21|gray.rose@undefined.io|+1 (807) 582-3992|
 
-##Before you start, please refer to:
+## Before you start, please refer to
 * [angularjs-ngrepeat-and-filtering-data](https://egghead.io/lessons/angularjs-ngrepeat-and-filtering-data)
 * [angular filter](https://docs.angularjs.org/api/ng/filter/filter)
 
-##Setup
+## Setup
  
-###To install dependencies 
+### To install dependencies 
 
- ```
- yarn install
- ```
- 
- ```
- bower install
- ```
+    npm install
+    
+    bower install
 
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
-To run verify jshint:
+### Jshint
+To run jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
 To run e2e tests in development mode:
 
     grunt test:e2e
 
-To run verify jshint, tests and coverage:
+To run jshint, tests and coverage:
 
-    yarn test
+    npm test
 
 Good luck!
