@@ -1,14 +1,14 @@
-#Exercise 20 : angular.element
+# Exercise 20 : angular.element
 
-##Summary
+## Summary
 You start with a basic application that displays one input field.
 The application should display a circle or square based on the input values.
 
-##Goals
+## Goals
 Complete the `findElement` directive:
 
  * it should be restricted as an element.
- * create new **h4** DOM element 
+ * create a new **h4** DOM element 
  * the new element should be appended and compiled as the directive template
  * the directive should react to any changes to the **input**.
     * when the **input** value is set to: *circle* or *square*, element class should be changed respectively to a `circle` or `square`.
@@ -16,40 +16,36 @@ Complete the `findElement` directive:
  
 To add class to the element use **addClass('className')** function, to remove it use **removeClass('className')** and to add the text use **text(''someText')**.
 
-##Before you start, please refer to:
+## Before you start, please refer to
 * [angularjs-angular-element](https://egghead.io/lessons/angularjs-angular-element)
 * [angularjs-the-basics-of-scope-watch](https://egghead.io/lessons/angularjs-the-basics-of-scope-watch)
 
-##Setup
+## Setup
  
-###To install dependencies
+### To install dependencies
 
-```
-yarn install
-```
+    npm install
+    
+    bower install
 
-```
-bower install
-```
-
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
-To run verify jshint:
+### Jshint
+To run jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
 To run e2e tests in development mode:
 
     grunt test:e2e
 
-To run verify jshint, tests and coverage:
+To run jshint, tests and coverage:
 
-    yarn test
+    npm test
 
 
 Good luck!
