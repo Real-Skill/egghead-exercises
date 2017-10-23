@@ -1,46 +1,42 @@
-#Exercise 2 : Controller
+# Exercise 2 : Controller
 
-##Summary
-Applications often need to display value that user has entered. You are provided with simple view containing title, three inputs and display board. Your task is to
+## Summary
+Applications often need to display values that a user has entered. You are provided with a simple view containing title, three inputs and display board. Your task is to
 implement functionality that will allow inputs to be displayed along with the information on the title and board.
 
-##Goals
+## Goals
 * create **FruitCtrl.js** file with `FruitCtrl` controller belonging to `app` module
-* in controller add three properties: `seller, name, count` with default values set to : **'Mr. John'**, **'apple'** and **3**.
-* comments in `index.html` should be replaced with appropriate values from the inputs
+* add three properties in controller, namely: `seller, name, count` with default values set to : **'Mr. John'**, **'apple'** and **3**.
+* replace comments in `index.html` with appropriate values from the inputs
 
-##Before you start, please refer to:
+## Before you start, please refer to
 * [angularjs-controller](https://egghead.io/lessons/angularjs-controllers)
 
-##Setup
+## Setup
 
-###To install dependencies
+### To install dependencies
 
-```
-yarn install
-```
+    npm install
+    
+    bower install
 
-```
-bower install
-```
-
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
-To run verify jshint:
+### Jshint
+To run jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
 To run e2e tests in development mode:
 
     grunt test:e2e
 
-To run verify jshint, tests and coverage:
+To run jshint, tests and coverage:
 
-    yarn test
+    npm test
 
 Good luck!
