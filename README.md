@@ -1,48 +1,44 @@
-#Exercise 4 : Defining a method on the scope
+# Exercise 4 : Defining a method on the scope
 
-##Summary
+## Summary
 You are provided with a simple application with two input fields that are not bound. You are supposed to replace **purr** 
-in the textarea, with a word specified in the text input below and display the resulting text inside h3 element(`display board`).
+in the textarea with a word specified in the text input below, and to display the resulting text inside h3 element(`display board`).
 
-##Goals
+## Goals
 
 * create `replaceWord()` function inside `NewWordCtrl` 
 * `replaceWord()` should :
     * accept three arguments: ***text, word, newWord*** 
     * replace `word` with a `newWord` in specified `text` (you can use `split()` and `join()` functions)
-* textarea model should be set default to lyrics from `SongText` factory
-* input for newWord should be set default to `newWord` from `SongText` factory 
-* the upper `display board` text value should be taken from the textarea below, refactored by a function `replaceWord()` 
+* set textarea model by default to lyrics from `SongText` factory
+* set input for newWord by default to `newWord` from `SongText` factory 
+* take the upper `display board` text value from the textarea below, refactor by function `replaceWord()` 
 * set `word` argument to *"purr"*
-* `display board` should be updated as values in textarea or input change
+* update `display board` on values in textarea or input change
 
-##Before you start, please refer to:
+## Before you start, please refer to
 * [angularjs-defining-a-method-on-the-scope](https://egghead.io/lessons/angularjs-defining-a-method-on-the-scope)
 
-##Setup
+## Setup
  
-###To install dependencies 
+### To install dependencies 
 
-```
-yarn install
-```
+    npm install
+    
+    bower install
 
-```
-bower install
-```
-
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
-To run verify jshint:
+### Jshint
+To run jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
-To unit tests in development mode:
+To run unit tests in development mode:
     
     grunt test:dev
     
@@ -50,8 +46,8 @@ To run e2e tests in development mode:
 
     grunt test:e2e
 
-To run verify jshint, tests and coverage:
+To run jshint, tests and coverage:
 
-    yarn test
+    npm test
 
 Good luck!
