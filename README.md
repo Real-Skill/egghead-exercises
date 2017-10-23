@@ -1,50 +1,45 @@
-#Exercise 23 : templateCache
+# Exercise 23 : TemplateCache
 
-##Summary
-An application that can render same data in several different ways. The displayed templates are changed based on user interaction. Use template cache to improve user experience.
+## Summary
+This application can render the same data in several different ways. The displayed templates are changed based on user interaction. Use template cache to improve the user experience.
 
-##Goals
+## Goals
 Utilise `templateCache` to store templates and render them in the directive. You start with two keywords: button, table - they represent coresponding templates:
  
 * button - displays when **button** is entered
 * table - displays when **table** is entered
 * default - displays in any other case
 
-##Before you start, please refer to:
+## Before you start, please refer to
 * [angular templateCache](https://egghead.io/lessons/angularjs-templatecache)
 * [$compile](https://code.angularjs.org/1.2.16/docs/api/ng/service/$compile)
 * [$watch](https://egghead.io/lessons/angularjs-the-basics-of-scope-watch)
 
-##Setup
+## Setup
 
-###To install dependencies 
+### To install dependencies 
 
-```
-yarn install
-```
+    npm install
+    
+    bower install
 
-```
-bower install
-```
-
-
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
-To run verify jshint:
+### Jshint
+To run jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
 To run e2e tests in development mode:
 
     grunt test:e2e
 
-To run verify jshint, tests and coverage:
+To run jshint, tests and coverage:
 
-    yarn test
+    npm test
 
 Good luck!
