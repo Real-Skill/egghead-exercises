@@ -1,39 +1,35 @@
-#Exercise 16 : Transclusion basics
+# Exercise 16 : The basics of transclusion
 
-##Summary
+## Summary
 Discover the true nature of animals with ng-transclude directive. Update **animal** directive to display the content 
-inside animal directives (dog, cat and pig).
+inside the animal directives (dog, cat and pig).
  
-##Goals
+## Goals
 Use ng-transclude in `animal` directive.
 
-##Before you start, please refer to:
+## Before you start, please refer to
 * [angularjs-transclusion-basics](https://egghead.io/lessons/angularjs-transclusion-basics)
 
-##Setup
+## Setup
  
-###To install dependencies 
+### To install dependencies 
 
-```
-yarn install
-```
+    npm install
+    
+    bower install
 
-```
-bower install
-```
-
-###To start application in live reload mode
+### To start application in live reload mode
 
     grunt serve
     
-###Jshint
-To run verify jshint:
+### Jshint
+To run jshint:
     
     grunt jshint:default
 
-###Run tests
+### Run tests
 
-To unit tests in development mode:
+To run unit tests in development mode:
     
     grunt test:dev
     
@@ -41,8 +37,8 @@ To run e2e tests in development mode:
 
     grunt test:e2e
 
-To run verify jshint, tests and coverage:
+To run jshint, tests and coverage:
 
-    yarn test
+    npm test
 
 Good luck!
