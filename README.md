@@ -14,9 +14,9 @@ You are provided with an application that has many controllers, directives and f
  
 ### To install dependencies 
 
-    npm install
-    
+    yarn install
     bower install
+    yarn run webdriver-manager-update
 
 ### To start application in live reload mode
 
@@ -39,6 +39,6 @@ To run e2e tests in development mode:
 
 To run jshint, tests and coverage:
 
-    npm test
+    yarn test
 
 Good luck!
