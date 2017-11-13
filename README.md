@@ -1,11 +1,11 @@
-##Exercise 40 : angular.copy
+## Exercise 40 : angular.copy
 
-##Summary
+## Summary
 In this application something bad happened to the titles of images. Use `selectedReq`, `requirementCopy` angular variables and `angular.copy` to update data 
 after you click on the image.
 
 
-##Goals
+## Goals
 
 Complete and use `update`, `save` functions to achieve the following results:
 
@@ -13,10 +13,10 @@ Complete and use `update`, `save` functions to achieve the following results:
 * enter text into the input should **not** automatically change the title of the image
 * after clicking `Save` button title of the image is updated
 
-##Before you start, please refer to:
+## Before you start, please refer to:
 * [angularjs-angular-copy-for-deep-copy](https://egghead.io/lessons/angularjs-angular-copy-for-deep-copy)
 
-##Setup
+## Setup
  You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
 ```
