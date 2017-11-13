@@ -1,10 +1,10 @@
-#Exercise 32 : Components and Containers
+# Exercise 32 : Components and Containers
 
-##Summary
+## Summary
 You are provided with two directives (`myContainer`,`myComponent`) and template files (container.html, component.html).  In component view you should be able to display as many `myComponent`s as you want. In the container view as many `myComponent`s as you want.
  but they should be inside a `myContainer`.
 
-##Goals
+## Goals
 
 * when user chooses `component` view:
 
@@ -18,10 +18,10 @@ You are provided with two directives (`myContainer`,`myComponent`) and template 
 	* names of the components should be displayed as in the `component` view
     * **remember!** you are not supposed to put the components inside the `myContainer` directive **template**
       
-##Before you start, please refer to:
+## Before you start, please refer to:
 * [angularjs-components-and-containers](https://egghead.io/lessons/angularjs-components-and-containers)
 
-##Setup
+## Setup
  You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
 ```
