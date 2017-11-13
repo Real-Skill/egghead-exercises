@@ -1,9 +1,9 @@
-#Exercise 43 : Unit Testing AngularJS
+# Exercise 43 : Unit Testing AngularJS
 
-##Summary
+## Summary
 In this application, you are supposed to create tests to three simple filters `star`, `withoutSpace` and `onlyFirstLetterUp`.
 
-##Goals
+## Goals
 * write unit tests to test:
     * `star` filter that wraps the text with stars
     * `withoutSpace` filter that removes all spaces
@@ -12,13 +12,13 @@ In this application, you are supposed to create tests to three simple filters `s
 * complete `filter` describe with three describes that correspond to the filter's name 
 * don't forget about adding the model before test cases
 
-##Before you start, please refer to:
+## Before you start, please refer to:
 * [angularjs-testing-overview](https://egghead.io/lessons/angularjs-testing-overview)
 
-##Setup
+## Setup
  You should have `npm`, `bower`, `grunt-cli`  packages installed to run this example.
  
-###To resolve dependencies run:
+### To resolve dependencies run:
 
 ```
 npm install
@@ -28,13 +28,13 @@ npm install
 bower install
 ```
 
-###To run the application:
+### To run the application:
 
 ```
 grunt serve
 ```
 
-###To test the application:
+### To test the application:
 
 
 To run karma unit tests:
