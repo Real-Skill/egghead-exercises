@@ -24,17 +24,13 @@ To tests your unit tests use `grunt mutationTest`
 ### To install dependencies 
 
 ```
-npm install
+yarn install
 ```
 
 ```
 bower install
 ```
 
-### To start application in live reload mode
-
-    grunt serve
-    
 ### Jshint
 To run verify jshint:
     
@@ -48,7 +44,7 @@ To unit tests in development mode:
 
 To run verify jshint, tests and coverage:
 
-    npm test
+    yarn test
 
 To run mutation tests:
     
