@@ -13,26 +13,29 @@ You start with broken application that should displayed list of GitHub users (wi
 * [angularjs-transformresponse](https://egghead.io/lessons/angularjs-transformresponse)
 
 ## Setup
- You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
-```
-npm install
-```
+### To install dependencies 
 
-```
-bower install
-```
+    yarn install
+    bower install
 
-To run the application:
+### To start application in live reload mode
 
-```
-grunt serve
-```
+    grunt serve
+    
+### Jshint
+To run verify jshint:
+    
+    grunt jshint:default
 
-To run unit tests:
+### Run tests
 
-```
-grunt karma
-```
+To unit tests in development mode:
+    
+    grunt test:dev
+    
+To run verify jshint, tests and coverage:
 
-Good luck!
+    yarn test
+
+Good luck !

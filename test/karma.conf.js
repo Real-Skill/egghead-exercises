@@ -12,7 +12,7 @@ module.exports = function (config)
         autoWatch: true,
 
         // base path, that will be used to resolve files and exclude
-        basePath: '',
+        basePath: '../',
 
         // testing framework to use (jasmine/mocha/qunit/...)
         frameworks: ['jasmine'], proxies: {
@@ -20,14 +20,14 @@ module.exports = function (config)
         },
 
         // list of files / patterns to load in the browser
-        files: ['../app/bower_components/angular/angular.js',
-                '../app/bower_components/angular-mocks/angular-mocks.js',
-                '../app/bower_components/lodash/dist/lodash.js',
-                '../app/bower_components/neosavvy-javascript-core/neosavvy-javascript-core.js',
-                '../app/app.js',
-                '../app/controllers/*.js',
-                '../app/services/*.js',
-                'unit/*.js'],
+        files: ['app/bower_components/angular/angular.js',
+                'app/bower_components/angular-mocks/angular-mocks.js',
+                'app/bower_components/lodash/dist/lodash.js',
+                'app/bower_components/neosavvy-javascript-core/neosavvy-javascript-core.js',
+                'app/app.js',
+                'app/controllers/*.js',
+                'app/services/*.js',
+                'test/unit/*.js'],
 
         // list of files / patterns to exclude
         exclude: [],
@@ -40,12 +40,9 @@ module.exports = function (config)
         },
 
         coverageReporter: {
-            dir: 'target/', reporters: [{
-                type: 'html'
-            }, {
-                type: 'cobertura', file: 'coverage.xml'
-            }]
-
+            dir: 'target/',
+            type: 'cobertura',
+            file: 'coverage.xml'
         },
 
         junitReporter: {
@@ -71,7 +68,7 @@ module.exports = function (config)
 
         // Continuous Integration mode
         // if true, it capture browsers, run tests and exit
-        singleRun: false,
+        singleRun: true,
 
         colors: true,
 
