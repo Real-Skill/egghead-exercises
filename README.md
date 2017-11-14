@@ -13,10 +13,10 @@ You start with broken application that should displayed list of GitHub users (wi
 * [angularjs-transformresponse](https://egghead.io/lessons/angularjs-transformresponse)
 
 ## Setup
- You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
+ You should have installed `yarn`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
 ```
-npm install
+yarn install
 ```
 
 ```
