@@ -12,8 +12,8 @@ describe('app', function ()
     beforeEach(inject(function ($controller)
     {
         promises = jasmine.createSpyObj('promises', ['set', 'getSuccess', 'getUnSuccess']);
-        promises.getSuccess.andReturn(successfulPromise('Everything is fine!'));
-        promises.getUnSuccess.andReturn(unsuccessfulPromise('You have some errors!'));
+        promises.getSuccess.and.returnValue(successfulPromise('Everything is fine!'));
+        promises.getUnSuccess.and.returnValue(unsuccessfulPromise('You have some errors!'));
 
         appCtrl = $controller('AppCtrl', {promises: promises});
         setCtrl = $controller('SetCtrl', {promises: promises});
