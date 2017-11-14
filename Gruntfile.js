@@ -1,84 +1,92 @@
 /*jshint camelcase:false*/
-'use strict';
-
-// # Globbing
-// for performance reasons we're only matching one level down:
-// 'unit/spec/{,*/}*.js'
-// use this if you want to recursively match all subfolders:
-// 'unit/spec/**/*.js'
 
 module.exports = function (grunt)
 {
+    'use strict';
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-protractor-webdriver');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-karma');
 
     require('load-grunt-tasks')(grunt);
 
-    var config = {
+
+    var paths = {
         app: 'app'
     };
 
     grunt.initConfig({
-        config: config, watch: {
+        config: paths,
+        watch: {
             livereload: {
                 options: {
                     livereload: '<%= connect.options.livereload %>'
-                }, files: ['<%= config.app %>/**/*.html', '<%= config.app %>/**/*.js']
+                },
+                files: ['<%= config.app %>/**/*.html', '<%= config.app %>/**/*.js']
             }
-        }, connect: {
+        },
+
+        connect: {
             options: {
-                port: 9000, livereload: 35729, hostname: 'localhost'
-            }, livereload: {
+                port: 9000,
+                livereload: 35729,
+                hostname: (process.env.HOSTNAME || 'localhost')
+            },
+            test: {
                 options: {
-                    open: true, middleware: function (connect)
+                    base: ['app'],
+                    port: 9001
+                }
+            },
+            livereload: {
+                options: {
+                    open: true,
+                    middleware: function (connect)
                     {
-                        return [connect().use('/bower_components', connect.static('./bower_components')), connect.static(config.app)
+                        return [connect().use('/bower_components', connect.static('./bower_components')), connect.static(paths.app)
 
                         ];
                     }
                 }
             }
-        }, protractor_webdriver: {
-            driver: {
-                options: {}
-            }
-        }, protractor: {
+        },
+        karma: {
             options: {
-                configFile: 'test/config.js', keepAlive: false, noColor: false
-            }, chrome: {
-                options: {
-                    args: {
-                        browser: 'chrome'
-                    }
-                }
-            }, firefox: {
-                options: {
-                    args: {
-                        browser: 'firefox'
-                    }
-                }
-            }, phantomjs: {
-                options: {
-                    args: {
-                        browser: 'phantomjs'
-                    }
-                }
-            }
-        }, karma: {
-            unit: {
                 configFile: 'test/karma.conf.js'
+            },
+            unit: {
+                singleRun: true
+            },
+            dev: {
+                singleRun: false
+            }
+        },
+        jshint: {
+            default: {
+                options: {
+                    jshintrc: true
+                },
+                files: {
+                    src: ['app/**/*.js', 'test/**/*.js', '!app/bower_components/**/*.js']
+                }
+            },
+            verify: {
+                options: {
+                    jshintrc: true,
+                    reporter: 'checkstyle',
+                    reporterOutput: 'target/jshint.xml'
+                },
+                files: {src: ['app/**/*.js', 'test/**/*.js', '!app/bower_components/**/*.js']}
             }
         }
     });
 
-    grunt.registerTask('serve', function ()
-    {
-        grunt.task.run(['connect:livereload', 'watch']);
-    });
-    grunt.registerTask('test', ['protractor_webdriver', 'protractor:chrome']);
+    grunt.registerTask('serve', ['connect:livereload', 'watch']);
+
+    grunt.registerTask('verify', ['jshint:verify', 'karma:unit']);
+
+    grunt.registerTask('test:dev', ['karma:dev']);
 
     grunt.registerTask('default', ['serve']);
 };

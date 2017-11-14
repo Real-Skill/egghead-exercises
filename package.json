@@ -1,6 +1,8 @@
 {
   "name": "angular-egghead",
   "description": "angular training",
+  "version": "0.0.0",
+  "private": true,
   "dependencies": {
     "body-parser": "1.12.0",
     "cors": "2.5.3",
@@ -14,6 +16,7 @@
     "grunt-cli": "0.1.13",
     "grunt-contrib-connect": "0.7.1",
     "grunt-contrib-watch": "0.6.1",
+    "grunt-contrib-jshint": "0.11.3",
     "grunt-karma": "0.10.1",
     "grunt-protractor-runner": "4.0.0",
     "grunt-protractor-webdriver": "0.2.5",
@@ -28,9 +31,8 @@
     "q": "1.4.1",
     "webdriver-manager": "5.2.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/aniaw/angular-egghead.git"
+  "scripts": {
+    "test": "grunt verify --force"
   },
   "engines": {
     "node": ">=0.10.0"

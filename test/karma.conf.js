@@ -40,12 +40,9 @@ module.exports = function (config)
         },
 
         coverageReporter: {
-            dir: 'target/', reporters: [{
-                type: 'html'
-            }, {
-                type: 'cobertura', file: 'coverage.xml'
-            }]
-
+            dir: 'target/',
+            type: 'cobertura',
+            file: 'coverage.xml'
         },
 
         junitReporter: {
@@ -71,7 +68,7 @@ module.exports = function (config)
 
         // Continuous Integration mode
         // if true, it capture browsers, run tests and exit
-        singleRun: false,
+        singleRun: true,
 
         colors: true,
 

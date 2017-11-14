@@ -2,6 +2,7 @@
 #IntelliJ Idea
 .idea
 *.iml
+app/bower_components
+node_modules
 target
-*app/bower_components
-*node_modules
+npm-debug.log
