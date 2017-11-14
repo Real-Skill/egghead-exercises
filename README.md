@@ -11,10 +11,10 @@ To accomplish this exercise replace factory injection with **$injector**.
   * [angularjs-injectors](https://egghead.io/lessons/angularjs-injectors)
   
 ## Setup
- You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
+ You should have installed `yarn`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
 ```
-npm install
+yarn install
 ```
 
 ```
