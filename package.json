@@ -1,6 +1,7 @@
 {
   "name": "angular-egghead",
   "description": "angular training",
+  "private": true,
   "dependencies": {},
   "devDependencies": {
     "grunt": "0.4.5",
@@ -14,11 +15,11 @@
     "karma-junit-reporter": "0.2.2",
     "karma-phantomjs-launcher": "1.0.2",
     "karma-spec-reporter": "0.0.13",
+    "grunt-contrib-jshint": "0.11.3",
     "load-grunt-tasks": "0.4.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/aniaw/angular-egghead.git"
+  "scripts": {
+    "test": "grunt verify --force"
   },
   "engines": {
     "node": ">=0.10.0"
