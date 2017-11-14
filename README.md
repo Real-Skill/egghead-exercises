@@ -12,10 +12,10 @@ Application displays sentence with `color` and `number` set by the factory. Your
 * [angularjs-providers](https://egghead.io/lessons/angularjs-providers)
 
 ## Setup
- You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
+ You should have installed `yarn`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
  
  ```
- npm install
+ yarn install
  ```
  
  ```
