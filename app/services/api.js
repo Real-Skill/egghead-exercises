@@ -1,6 +1,6 @@
-'use strict';
 angular.module('services').factory('Api', ['$q', '$http', function ($q, $http)
 {
+    'use strict';
     return {
         getUsers: function ()
         {
