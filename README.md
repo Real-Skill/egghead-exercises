@@ -11,10 +11,10 @@ Setting data on scope is dangerous because it makes available everywhere, wheref
 * [angularjs-experimental-controller-as-syntax](https://egghead.io/lessons/angularjs-experimental-controller-as-syntax)
 
 ## Setup
- You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
+ You should have installed `yarn`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
 ```
-npm install
+yarn install
 ```
 
 ```

@@ -3,6 +3,7 @@
   "description": "angular training",
   "dependencies": {},
   "devDependencies": {
+    "karma-jasmine": "1.1.0",
     "chai": "1.9.2",
     "chai-as-promised": "4.1.1",
     "cucumber": "0.4.4",
