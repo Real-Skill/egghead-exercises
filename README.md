@@ -17,10 +17,10 @@ data from `bus` and `vehicle`.
 * [angularjs-directive-communication](https://egghead.io/lessons/angularjs-directive-communication)
 
 ## Setup
- You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
+ You should have installed `yarn`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
 ```
-npm install
+yarn install
 ```
 
 ```
