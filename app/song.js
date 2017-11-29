@@ -1,9 +1,10 @@
-'use strict';
 
 var songApp = angular.module('songApp', []);
 
 songApp.factory('Song', function ()
 {
+    'use strict';
+
     return {
         author: 'Gotye feat. Kimbra',
         title: 'Somebody That I Used To Know',
@@ -14,6 +15,7 @@ songApp.factory('Song', function ()
 
 songApp.controller('SongCtrl', function ()
 {
+    'use strict';
     var ctrl = this;
     ctrl.showSongText = function ()
     {
