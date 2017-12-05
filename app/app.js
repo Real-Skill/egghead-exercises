@@ -1,9 +1,10 @@
-'use strict';
+
 
 var app = angular.module('simpleExercise', ['ngRoute']);
 
 app.config(function ($routeProvider, $provide)
 {
+    'use strict';
     $routeProvider.when('/', {
         templateUrl: 'views/home.html', controller: 'SetCtrl as setCtrl'
     });
@@ -37,6 +38,7 @@ app.config(function ($routeProvider, $provide)
 
 app.controller('SetCtrl', function ($scope, promises, $location)
 {
+    'use strict';
     $scope.set = function (value)
     {
         if (value && value.success && value.unSuccess) {
@@ -49,6 +51,7 @@ app.controller('SetCtrl', function ($scope, promises, $location)
 
 app.controller('AppCtrl', function ($scope, promises)
 {
+    'use strict';
     $scope.get = function ()
     {
         promises.getSuccess().then(function (result)
@@ -60,6 +63,7 @@ app.controller('AppCtrl', function ($scope, promises)
 
 app.controller('UnSuccessCtrl', function ($scope, promises)
 {
+    'use strict';
     $scope.getUnSuccess = function ()
     {
         promises.getUnSuccess().catch(function (result)
@@ -71,10 +75,13 @@ app.controller('UnSuccessCtrl', function ($scope, promises)
 
 app.directive('resolveSuccessPromise', function ()
 {
+    'use strict';
     return {
         scope: {},
         restrict: 'E',
         controller: 'UnSuccessCtrl as unSuccessCtrl',
-        template: '<div class="form-group">\n    <button id="unSuccessButton" class="btn btn-danger" ng-click="getUnSuccess()"> Get un success value from directive</button>\n    <span ng-if="unSuccess">\n        <p class="form-group">\n            Your un success value is: <span class="text-danger">{{unSuccess}}</span>\n        </p>\n    </span>\n</div>'
+        template: '<div class="form-group">\n    <button id="unSuccessButton" class="btn btn-danger" ng-click="getUnSuccess()">' +
+        ' Get un success value from directive</button>\n    <span ng-if="unSuccess">\n        <p class="form-group">\n     ' +
+        '       Your un success value is: <span id = "textUnSuccess" class="text-danger">{{unSuccess}}</span>\n        </p>\n    </span>\n</div>'
     };
 });

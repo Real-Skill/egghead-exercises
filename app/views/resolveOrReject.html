@@ -2,7 +2,7 @@
     <div class="form-group">
         <button id="successButton" class="btn btn-success" ng-click="get()"> Get success value</button>
         <p ng-if="success">
-            Your success value is: <span class="text-success">{{success}}</span>
+            Your success value is: <span id="textSuccess" class="text-success">{{success}}</span>
         </p>
     </div>
     <resolve-success-promise></resolve-success-promise>

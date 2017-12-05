@@ -1,3 +1,4 @@
+
 describe('app', function ()
 {
     'use strict';
@@ -7,13 +8,47 @@ describe('app', function ()
     var unSuccessCtrl;
     var promises;
 
+    function successfulPromise() {
+        var theArguments = arguments;
+        return {
+            then: function (callback) {
+                callback.apply(null, theArguments);
+                return this;
+            },
+            catch: function () {
+                return this;
+            },
+            finally: function (callback) {
+                callback.apply(null, theArguments);
+                return this;
+            }
+        };
+    }
+
+    function unsuccessfulPromise() {
+        var theArguments = arguments;
+        return {
+            then: function () {
+                return this;
+            },
+            catch: function (callback) {
+                callback.apply(null, theArguments);
+                return this;
+            },
+            finally: function (callback) {
+                callback.apply(null, theArguments);
+                return this;
+            }
+        };
+    }
+
     beforeEach(module('simpleExercise'));
 
     beforeEach(inject(function ($controller)
     {
         promises = jasmine.createSpyObj('promises', ['set', 'getSuccess', 'getUnSuccess']);
-        promises.getSuccess.andReturn(successfulPromise('Everything is fine!'));
-        promises.getUnSuccess.andReturn(unsuccessfulPromise('You have some errors!'));
+        promises.getSuccess.and.returnValue(successfulPromise('Everything is fine!'));
+        promises.getUnSuccess.and.returnValue(unsuccessfulPromise('You have some errors!'));
 
         appCtrl = $controller('AppCtrl', {promises: promises});
         setCtrl = $controller('SetCtrl', {promises: promises});
