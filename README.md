@@ -12,26 +12,31 @@ When you're hungry, you are not yourself. Check out, what your friends keep in t
 * [angularjs-ng-repeat-start](https://egghead.io/lessons/angularjs-ng-repeat-start)
 
 ## Setup
- You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
-```
-npm install
-```
+### To install dependencies
 
-```
-bower install
-```
+    yarn install
+    bower install
+    npm run webdriver-manager-update
 
-To run the application:
+### To start application in live reload mode
 
-```
-grunt serve
-```
+    grunt serve
+    
+### Jshint
+To run verify jshint:
+    
+    grunt jshint:default
 
-To run cucumber tests:
+### Run tests
 
-```
-grunt test
-```
+To run e2e tests in development mode:
+
+    grunt test:e2e
+
+To run verify jshint, tests and coverage:
+
+    yarn test
+
 
 Good luck!
