@@ -1,9 +1,9 @@
-'use strict';
 
 var app = angular.module('app', []);
 
 app.provider('partsList', function ()
 {
+    'use strict';
     var lists = [{
         name: 'engine', enable: false
     }, {
@@ -50,6 +50,7 @@ app.provider('partsList', function ()
 
 app.controller('CarCtrl', function ($timeout, partsList)
 {
+    'use strict';
     var ctrl = this;
     ctrl.lists = partsList.lists;
     ctrl.result = false;
