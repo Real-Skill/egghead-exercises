@@ -23,6 +23,7 @@ Controllers and `welcome.html`, `paintingDetails.html` pages are ready.
 
     yarn install
     bower install
+    npm run webdriver-manager-update
 
 ### To start application in live reload mode
 
