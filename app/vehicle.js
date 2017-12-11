@@ -1,8 +1,9 @@
-'use strict';
+
 var app = angular.module('app', []);
 
 app.directive('vehicle', function ()
 {
+    'use strict';
     return {
         restrict: 'E', transclude: true, controller: function ()
         {
@@ -13,11 +14,11 @@ app.directive('vehicle', function ()
 
             this.alarm = function ()
             {
-                alert('Beeeeeeep!');
+                window.alert('Beeeeeeep!');
             };
             this.fastenYourSeatbelt = function ()
             {
-                alert('Click!');
+                window.alert('Click!');
             };
 
         }, template: '<div ng-transclude></div>'
@@ -26,6 +27,7 @@ app.directive('vehicle', function ()
 
 app.directive('car', function ()
 {
+    'use strict';
     return {
         restrict: 'E',
         require: '^vehicle',
@@ -46,6 +48,7 @@ app.directive('car', function ()
 
 app.directive('bus', function ()
 {
+    'use strict';
     return {
         restrict: 'E',
         require: '^vehicle',
@@ -69,6 +72,7 @@ app.directive('bus', function ()
 
 app.directive('audi', function ()
 {
+    'use strict';
     return {
         restrict: 'E',
         link: function (scope, element, attrs, ctrls)
@@ -87,12 +91,13 @@ app.directive('audi', function ()
         template: '<div class="col-md-4"><input id="driveCar" class="form-control" type="number" ng-model="speed"></div>' +
         '<div class="btn-group"><button id="driveCarButton" class="btn btn-default" ng-click="setSpeed(speed)">Drive!</button>' +
         '<button id="seatBeltsButton" ng-click="isClicked()" class="btn btn-default">Seat belts!</button>' +
-        '</div><h3>{{driveSpeed}}</h3>'
+        '</div><h3 id="audiDriveSpeed">{{driveSpeed}}</h3>'
     };
 });
 
 app.directive('jelcz', function ()
 {
+    'use strict';
     return {
         restrict: 'E',
         controller: function ()
@@ -113,7 +118,8 @@ app.directive('jelcz', function ()
         },
         template: '<div class="col-md-4"><input id="driveBus" class="form-control" type="number" ng-model="speed"></div>' +
         '<div class="btn-group"><button id="driveBusButton" class="btn btn-default" ng-click="setSpeed(speed)">Drive!</button>' +
-        '<button  id="emergencyBrakeButton" class="btn btn-default" ng-click="isClicked()">Emergency brake!</button></div><h3>{{driveSpeed}}</h3>'
+        '<button  id="emergencyBrakeButton" class="btn btn-default" ng-click="isClicked()">Emergency brake!</button></div>' +
+        '<h3 id="jelczDriveSpeed">{{driveSpeed}}</h3>'
 
     };
 
