@@ -19,32 +19,32 @@ Controllers and `welcome.html`, `paintingDetails.html` pages are ready.
 * [angularjs-introduction-ui-router](https://egghead.io/lessons/angularjs-introduction-ui-router)
 
 ## Setup
- You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
+### To install dependencies 
 
-```
-npm install
-```
+    yarn install
+    bower install
 
-```
-bower install
-```
+### To start application in live reload mode
 
-To run the application:
+    grunt serve
+    
+### Jshint
+To run verify jshint:
+    
+    grunt jshint:default
 
-```
-grunt serve
-```
+### Run tests
 
-To run cucumber tests:
+To unit tests in development mode:
+    
+    grunt test:dev
+    
+To run e2e tests in development mode:
 
-```
-grunt test
-```
+    grunt test:e2e
 
-To run unit tests:
+To run verify jshint, tests and coverage:
 
-```
-grunt karma
-```
+    yarn test
 
 Good luck!
