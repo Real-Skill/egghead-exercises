@@ -2,7 +2,7 @@ describe('app', function ()
 {
     'use strict';
     var transformer;
-    var api;
+    //var api
     var responseA;
     var responseB;
 
