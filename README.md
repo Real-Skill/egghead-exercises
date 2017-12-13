@@ -12,26 +12,29 @@ Application displays sentence with `color` and `number` set by the factory. Your
 * [angularjs-providers](https://egghead.io/lessons/angularjs-providers)
 
 ## Setup
- You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
- 
- ```
- npm install
- ```
- 
- ```
- bower install
- ```
- 
- To run the application:
- 
- ```
- grunt serve
- ```
- 
-To run unit tests:
 
- ```
- grunt karma
- ```
+### To install dependencies 
+
+    yarn install
+    bower install
+
+### To start application in live reload mode
+
+    grunt serve
+    
+### Jshint
+To run verify jshint:
+    
+    grunt jshint:default
+
+### Run tests
+
+To unit tests in development mode:
+    
+    grunt test:dev
+    
+To run verify jshint, tests and coverage:
+
+    yarn test
  
 Good luck!

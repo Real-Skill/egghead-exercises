@@ -1,4 +1,3 @@
-'use strict';
 var homeApp = angular.module('homeApp', []);
 
 // add homeApp.provider 
@@ -7,6 +6,7 @@ var homeApp = angular.module('homeApp', []);
 
 // remove factory 
 homeApp.factory('Home', function() {
+    'use strict';
     var exampleNum = 67;
     return {
         color: 'red',
@@ -16,6 +16,7 @@ homeApp.factory('Home', function() {
 
 homeApp.controller('HomeCtrl', function (Home)
 {
+    'use strict';
     var ctrl = this;
     ctrl.color = Home.color;
     ctrl.number = Home.number;
