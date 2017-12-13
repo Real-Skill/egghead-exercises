@@ -13,12 +13,12 @@ module.exports = function (grunt)
     require('load-grunt-tasks')(grunt);
 
 
-    var config = {
+    var paths = {
         app: 'app'
     };
 
     grunt.initConfig({
-        config: config,
+        config: paths,
         watch: {
             livereload: {
                 options: {
@@ -32,7 +32,7 @@ module.exports = function (grunt)
             options: {
                 port: 9000,
                 livereload: 35729,
-                hostname: '127.0.0.1'
+                hostname: (process.env.HOSTNAME || 'localhost')
             },
             test: {
                 options: {
