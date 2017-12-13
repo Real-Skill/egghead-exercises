@@ -1,9 +1,9 @@
-'use strict';
-
 var reqApp = angular.module('reqApp', []);
 
 reqApp.controller('ReqCtrl', function ()
 {
+    'use strict';
+
     this.updateTitle = false;
     this.selectedReq = null;
     this.requirementCopy = null;

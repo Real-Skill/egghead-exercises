@@ -17,14 +17,13 @@ module.exports = function (config)
         // testing framework to use (jasmine/mocha/qunit/...)
         frameworks: ['jasmine'],
 
-
         preprocessors: {
-            '*.html': ['ng-html2js']
+            'app/*.js': 'coverage',
+            'app/!(bower_components)/**/*.js': 'coverage'
         },
 
         // list of files / patterns to load in the browser
         files: ['app/bower_components/angular/angular.js',
-                '*.html',
                 'app/bower_components/angular-mocks/angular-mocks.js',
                 'app/requirements.js',
                 'test/unit/**/*spec.js'],
@@ -34,21 +33,15 @@ module.exports = function (config)
 
         reporters: ['spec', 'junit', 'coverage'],
 
-        ngHtml2JsPreprocessor: {
-            moduleName: 'templates'
-        }, coverageReporter: {
-            dir: 'test/target/', reporters: [{
-                type: 'html'
-            }, {
-                type: 'cobertura', file: 'coverage.xml'
-            }]
-
+        coverageReporter: {
+            dir: 'target/',
+            type: 'cobertura',
+            file: 'coverage.xml'
         },
 
         junitReporter: {
             outputFile: 'target/test-results.xml'
         },
-
 
         // web server port
         port: 8080,
@@ -64,8 +57,7 @@ module.exports = function (config)
         browsers: ['PhantomJS'],
 
         // Which plugins to enable
-        plugins: ['karma-ng-html2js-preprocessor',
-                  'karma-phantomjs-launcher',
+        plugins: ['karma-phantomjs-launcher',
                   'karma-jasmine',
                   'karma-spec-reporter',
                   'karma-junit-reporter',
@@ -73,7 +65,7 @@ module.exports = function (config)
 
         // Continuous Integration mode
         // if true, it capture browsers, run tests and exit
-        singleRun: false,
+        singleRun: true,
 
         colors: true,
 
