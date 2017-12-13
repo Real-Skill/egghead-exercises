@@ -16,37 +16,33 @@ In this application, you are supposed to create tests to three simple filters `s
 * [angularjs-testing-overview](https://egghead.io/lessons/angularjs-testing-overview)
 
 ## Setup
- You should have `npm`, `bower`, `grunt-cli`  packages installed to run this example.
- 
-### To resolve dependencies run:
 
-```
-npm install
-```
+### To install dependencies 
 
-```
-bower install
-```
+    yarn install
+    bower install
 
-### To run the application:
+### To start application in live reload mode
 
-```
-grunt serve
-```
+    grunt serve
+    
+### Jshint
+To run verify jshint:
+    
+    grunt jshint:default
 
-### To test the application:
+### Run tests
 
+To unit tests in development mode:
+    
+    grunt test:dev
+    
+To run verify jshint, tests and coverage:
 
-To run karma unit tests:
-
-```
-npm run karma
-```
-
+    yarn test
+    
 To run mutation tests:
 
-```
-npm run mutation
-```
+    yarn run mutation
 
 Good luck!

@@ -1,5 +1,7 @@
 {
   "name": "angular-egghead",
+  "version": "0.0.0",
+  "private": true,
   "description": "angular training",
   "dependencies": {},
   "devDependencies": {
@@ -25,18 +27,10 @@
     "q": "1.4.1",
     "webdriver-manager": "5.2.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/aniaw/angular-egghead-exercises.git"
-  },
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "node ./node_modules/karma/bin/karma start test/karma.conf.js --singleRun true",
-    "posttest": "node ./node_modules/grunt-cli/bin/grunt test",
-    "protractor": "node ./node_modules/grunt-cli/bin/grunt test",
-    "karma": "node ./node_modules/karma/bin/karma start test/karma.conf.js --singleRun true",
-    "mutation": "node ./node_modules/grunt-cli/bin/grunt mutationTest:karma"
+    "test": "grunt verify --force"
   }
 }
