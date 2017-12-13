@@ -1,5 +1,7 @@
 {
   "name": "angular-egghead",
+  "version": "0.0.0",
+  "private": true,
   "description": "angular training",
   "dependencies": {
     "angular": "1.3.15",
