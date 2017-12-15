@@ -12,7 +12,7 @@ module.exports = function (config)
         autoWatch: true,
 
         // base path, that will be used to resolve files and exclude
-        basePath: '',
+        basePath: '../',
 
         // testing framework to use (jasmine/mocha/qunit/...)
         frameworks: ['jasmine'], proxies: {
@@ -20,10 +20,10 @@ module.exports = function (config)
         },
 
         // list of files / patterns to load in the browser
-        files: ['../app/bower_components/angular/angular.js',
-                '../app/bower_components/angular-mocks/angular-mocks.js',
-                '../app/phone.js',
-                'unit/**/*spec.js'],
+        files: ['app/bower_components/angular/angular.js',
+                'app/bower_components/angular-mocks/angular-mocks.js',
+                'app/phone.js',
+                'test/unit/**/*spec.js'],
 
         // list of files / patterns to exclude
         exclude: [],
@@ -32,15 +32,14 @@ module.exports = function (config)
         reporters: ['spec', 'junit', 'coverage'],
 
         preprocessors: {
-            'app/modules/common/patchModel.service.js': 'coverage'
+            'app/*.js': 'coverage',
+            'app/!(bower_components)/**/*.js': 'coverage'
         },
 
         coverageReporter: {
-            dir: 'target/', reporters: [{
-                type: 'html'
-            }, {
-                type: 'cobertura', file: 'coverage.xml'
-            }]
+            dir: 'target/',
+            type: 'cobertura',
+            file: 'coverage.xml'
 
         },
 
@@ -67,7 +66,7 @@ module.exports = function (config)
 
         // Continuous Integration mode
         // if true, it capture browsers, run tests and exit
-        singleRun: false,
+        singleRun: true,
 
         colors: true,
 

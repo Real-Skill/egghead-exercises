@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
-<body ng-app="phoneApp" ng-controller="PhoneCtrl">
+<body ng-app="phoneApp" ng-controller="PhoneCtrl as phoneCtrl">
 <div class="container">
     <div class="page-header">
         <h1>Call Me
@@ -18,7 +18,7 @@
             </select>
         </div>
         <div class="form-group">
-            <button class="btn btn-default" ng-click="showPhone()">
+            <button id="buttonShow" class="btn btn-default" ng-click="showPhone()">
                 <strong ng-hide="isShow">Give me the phone!</strong>
                 <strong ng-show="isShow">I don't need a phone.</strong>
             </button>
@@ -27,7 +27,7 @@
     <div class="col-md-12">
         <div class="text-center" ng-click="call()">
             <div class="form-group btn btn-default" ng-show="isShow">
-                <p>{{selectedPerson.number}}</p>
+                <p id="phoneNumber">{{selectedPerson.number}}</p>
                 <img src="assets/phone.png">
             </div>
         </div>

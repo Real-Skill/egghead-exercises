@@ -29,9 +29,8 @@
 
         $scope.call = function ()
         {
-            alert('ring ding ding ding...');
+            window.alert('ring ding ding ding...');
         };
-
 
     });
 })();

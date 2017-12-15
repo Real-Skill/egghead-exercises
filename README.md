@@ -7,27 +7,34 @@ Application simulates a phone book. Check out how it works, then use the control
 * [angularjs-experimental-controller-as-syntax](https://egghead.io/lessons/angularjs-experimental-controller-as-syntax)
 
 ## Setup
- You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. To resolve dependencies run:
 
-```
-npm install
-```
+### To install dependencies 
 
-```
-bower install
-```
+    yarn install
+    bower install
+    npm run webdriver-manager-update
 
-To run the application:
+### To start application in live reload mode
 
-```
-grunt serve
-```
+    grunt serve
+    
+### Jshint
+To run verify jshint:
+    
+    grunt jshint:default
 
-To run cucumber tests:
+### Run tests
 
-```
-grunt test
-```
+To unit tests in development mode:
+    
+    grunt test:dev
+    
+To run e2e tests in development mode:
 
+    grunt test:e2e
+
+To run verify jshint, tests and coverage:
+
+    yarn test
 
 Good luck!
