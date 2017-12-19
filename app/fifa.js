@@ -1,29 +1,27 @@
-'use strict';
-
 var fifaApp = angular.module('fifaApp', []);
-
-//log
 
 fifaApp.controller('FifaCtrl', function ()
 {
+    'use strict';
+
     var ctrl = this;
+
     ctrl.ranking = [{
-        team: 'Germany', points: 1725
+        team: 'Germany', points: 1602
     }, {
-        team: 'Argentina', points: 1583
+        team: 'Brazil', points: 1483
     }, {
-        team: 'Colombia', points: 1450
+        team: 'Portugal', points: 1358
     }, {
-        team: 'Belgium', points: 1417
+        team: 'Argentina', points: 1348
     }, {
-        team: 'Netherlands', points: 1374
+        team: 'Belgium', points: 1325
     }];
 
-    ctrl.PolandRank = false;
+    ctrl.polandRank = false;
 
     ctrl.showPolandRank = function ()
     {
-        ctrl.PolandRank = !ctrl.PolandRank;
+        ctrl.polandRank = !ctrl.polandRank;
     };
-
 });
