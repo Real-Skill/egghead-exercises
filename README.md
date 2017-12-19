@@ -16,26 +16,30 @@ under the table.
 * [angularjs-resolve](https://egghead.io/lessons/angularjs-resolve)
 
 ## Setup
-You should have installed `npm`, `bower`, `grunt-cli`  packages to run this example. First, run sequentially
 
-```
-npm install
-```
+### To install dependencies
 
-```
-bower install
-```
+    yarn install
+    bower install
+    npm run webdriver-manager-update
 
-To start the application, run
+### To start application in live reload mode
 
-```
-grunt serve
-```
+    grunt serve
+    
+### Jshint
+To run verify jshint:
+    
+    grunt jshint:default
 
-To start cucumber tests, run sequentially in separate terminals the application and command
+### Run tests
 
-```
-grunt test
-```
+To run e2e tests in development mode:
 
+    grunt test:e2e
+
+To run verify jshint, tests and coverage:
+
+    yarn test
+    
 Good luck!
