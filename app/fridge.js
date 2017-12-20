@@ -1,8 +1,8 @@
-'use strict';
 
 var fridgeApp = angular.module('fridgeApp', []);
 
 fridgeApp.controller('FridgeCtrl', function () {
+    'use strict';
     this.list = [
         { id: 1, name: 'Austin', fridge: [
             {name: 'banana', count: 4 },
